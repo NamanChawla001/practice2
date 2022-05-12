@@ -1,0 +1,135 @@
+<!-- SECTION 2-->
+<!--see the indentation n understand what it does -->
+<!-- below is boilerplate code (a code template u can reuse), to get it just type html n emmet extension will auto write the code for u, to see how emmet does this u can google docs.emmet.io/cheat-sheet/ n same for other extensions</u> -->
+<!-- remmeber to keep doing ctrl+S-->
+<!DOCTYPE html> <!-- tells the browser what version of html we wanna use, we use html 5 in this case-->
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- part of file that holds info abt the webpage n tells browser how it should handle the page -->
+  <meta charset="utf-8">
+  <!-- meta tage tell browser how is should display the webpage. utf-8 allows website to be rendered correctly from international browsers aka when its converted to another lang. it wont give jumbled up characters due to mismatch in position of characters- visualize.read joel spoliskey doc -->
+  <!-- besides charset we hv other elements eg.description, author etc. these metatags tell the broswe how it should display the webpage n give info to search engines abt the content of the website-->
+  <title>Naman's personal site</title>
+  <!-- to bold use strong tag n to italicize use emphasis (<em>) tag. can use <i> or <b> instead but its preferred to show emphasis to those words rather than simply change their style- this is the reason we prefer the former over the latter  -->
+</head>
+
+<body>
+  <table cellspacing="20">
+    <!-- cellspacing attribute defines the space b/w 2 cells in pixesl-->
+    <tr>
+      <td><img src="https://bestpetsvet.com/wp-content/uploads/2019/02/cat-2146089_1280.jpg" alt="image of cat"></td>
+      <td>
+        <h1>Naman Chawla</h1>
+        <!-- <p> is for paragraph-->
+        <p><em>Founder and CTO of the <strong><a href="https://appbrewery.com/">app brewery</a></strong>.</em></p>
+        <p>I am an IOS and web developer</p>
+      </td>
+    </tr>
+  </table>
+  <img src="https://bestpetsvet.com/wp-content/uploads/2019/02/cat-2146089_1280.jpg" alt="image of cat">
+  <!--way 1 of adding image-alt is presented if img cannot be displayed for some reason. this method is not preferred as we r reliant on the 3rd party website to get it so if the website dies, we cant ge tthe image -->
+  <!--<img src="Screenshot (1658).png" alt="image alternative"><!-- way 2 of adding image. can use this method only if the inage is within the same folder as index.html n on the same hierarchichal level. if its inside smth, we must specify the path. both are fine. -->
+  <h1>Naman Chawla</h1>
+  <!-- <p> is for paragraph-->
+  <p><em>Founder and CTO of the <strong><a href="https://appbrewery.com/">app brewery</a></strong>.</em></p>
+  <p>I am an IOS and web developer</p>
+  <!-- <hr> is horizontal rule which is a self closing tag-->
+  <!-- ul is unordered list aka theres no order like 1,2,3 or A,B,C snf li is list element-->
+  <!--ol is ordered list to order by roman nos. use <ol type ="i"> n to start numbering from eg. 7 use <ol start = "7">-->
+  <hr>
+  <h3>Books and teaching </h3>
+  <ul>
+    <li>the first book/course</li>
+    <li>the second book/course</li>
+    <ul>
+      <hr>
+      <h3>work experience</h3>
+      <!-- below we create a table, we dont NEED thead,tbody n tfoot tags but still put em if we wanna do anything to that section later. <th> puts the data in bold. <tr> creates a new row while <td> n <th> create new cells within that row -->
+      <table border=1>
+        <!-- table's attribute is border in this case in which we set a border of 1 pixel-->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Smith</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>Bob Stewart</td>
+            <td>32</td>
+          </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+      </table>
+      <h3><a href="hobbies.html">my hobbies</a></h3>
+      <!--we do this to attach a link of our own website whcih is within the same folder as index.html and at the same hierarchichal level (if not, must mention path)-->
+
+      <table cellspacing = "10">
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>ios dev</td>
+                <td>5 star</td>
+              </tr>
+              <tr>
+                <td>web dev</td>
+                <td>5.5 star</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>ios dev</td>
+                <td>5 star</td>
+              </tr>
+              <tr>
+                <td>web dev</td>
+                <td>5.5 star</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+
+
+      </table>
+
+
+</body>
+
+</html>
+
+<!-- hyper text is a bunch of text docs that can be linked together using hyper links. so when u click on the link u can be redirected to the other page -->
+<!--<a> is anchor tag -->
+
+<!-- garbage code
+//sample stuff
+<table>
+  <tr>
+    <td>ios dev</td>
+    <td>5 star</td>
+  </tr>
+  <tr>
+    <td>web dev</td>
+    <td>5.5 star</td>
+  </tr>
+</table>
+
+<tr>
+  <td>photography</td>
+  <td>5 star</td>
+</tr>
+<tr>
+  <td>drawing</td>
+  <td>5.5 star</td>
+</tr>
+garbage code -->
